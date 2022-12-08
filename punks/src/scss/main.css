@@ -1,0 +1,498 @@
+@charset "UTF-8";
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0 !important;
+  background: #212121 !important;
+  color: #fafafa;
+  font-family: "URW Geometric";
+}
+
+@supports (-webkit-touch-callout: none) {
+  .cssSafari {
+    background-attachment: initial !important;
+  }
+}
+
+.newcssforLine {
+  position: relative;
+}
+
+.newcssforLine::before {
+  right: 242px !important;
+  width: 200px;
+  border: 1px solid #fff;
+  top: 0px;
+  height: 0px;
+  content: '';
+  z-index: 22;
+  position: absolute;
+}
+
+@media (max-width: 1280px) {
+  .newcssforLine::before {
+    right: 272px !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .newcssforLine::before {
+    display: none;
+  }
+}
+
+.roadmappage {
+  width: 100%;
+  position: relative;
+  padding-top: 50px;
+  background-size: cover;
+  background-color: #212121;
+  background-repeat: no-repeat;
+}
+
+.roadmappage::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mainBoxRoadmap {
+  text-align: left;
+  max-width: 984px;
+  margin: 82px auto 0;
+}
+
+.mainBoxRoadmap h3 {
+  font-size: 30px;
+  color: #fff;
+  margin: 20px 0;
+  display: inline-block;
+  position: relative;
+}
+
+.mainBoxRoadmap h3::after {
+  top: -20px;
+  position: absolute;
+  content: "";
+  left: 50%;
+  margin: -11px 0 0 -10px;
+  width: 21px;
+  height: 21px;
+  background-color: #d7efe6;
+  border-radius: 50%;
+}
+
+.mainBoxRoadmap p {
+  font-size: 18px;
+  color: #bebebe;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.mainBoxRoadmap ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainBoxRoadmap ul li p {
+  padding: 0 20px;
+}
+
+.roadmapMap-one {
+  border: 2px solid #fff;
+  border-left: 0;
+  border-radius: 0 200px 200px 0;
+  padding-bottom: 82px;
+  margin-top: -2px;
+  position: relative;
+}
+
+.roadmapMap-one::after {
+  position: absolute;
+  content: "";
+  background: #202020;
+  height: 2px;
+  width: 12.5%;
+  bottom: -2px;
+  left: 0;
+}
+
+.roadmapMap-two {
+  border: 2px solid #fff;
+  border-right: 0;
+  border-radius: 200px 0 0 200px;
+  padding-bottom: 82px;
+  margin-top: -2px;
+  position: relative;
+}
+
+.roadmapMap-two::before {
+  position: absolute;
+  content: "";
+  background: #000;
+  height: 30px;
+  width: 148px;
+  top: 4px;
+  right: -10px;
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  pointer-events: none;
+}
+
+.roadmapMap-two::after {
+  position: absolute;
+  content: "";
+  background: #000000;
+  height: 30px;
+  width: 148px;
+  bottom: 4px;
+  right: -10px;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  pointer-events: none;
+}
+
+.roadmapMap-three::before {
+  position: absolute;
+  content: "";
+  background: #000;
+  height: 2px;
+  width: 8.3%;
+  top: -2px;
+  left: 0;
+}
+
+.last::after {
+  display: none;
+}
+
+.overlay figure {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 50px 0 50px 0;
+}
+
+@media (max-width: 991px) {
+  .roadmapMap-one2 {
+    border-left: 2px solid #fff;
+    text-align: left;
+    padding-left: 30px;
+  }
+  .roadmapMap-one {
+    border: none;
+    border-left: 2px solid #fff;
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  .mainBoxRoadmap p {
+    max-width: 100%;
+  }
+  .roadmapMap-two {
+    border: none;
+    border-left: 2px solid #fff;
+    text-align: left;
+    padding-left: 30px;
+    border-radius: 0;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  .mainBoxRoadmap ul {
+    display: block;
+  }
+  .mainBoxRoadmap ul li {
+    padding-bottom: 30px;
+  }
+  .mainBoxRoadmap ul li p {
+    padding: 0;
+  }
+  .mainBoxRoadmap h3::after {
+    top: 18px;
+    left: -31px;
+  }
+}
+
+.artwork .slick-initialized .slick-slide.slick-current .active {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.artwork .slick-track {
+  padding: 60px 0;
+}
+
+.slick-dots li button:before {
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 3px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  background-color: #fff;
+  color: #0000;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #0000;
+}
+
+.clr-gry.slick-arrow {
+  top: 0;
+  position: absolute;
+}
+
+.mainroadmapBox {
+  overflow-x: scroll;
+  display: -webkit-inline-box;
+  width: 100%;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.mainroadmapBox::-webkit-scrollbar {
+  height: 8px;
+}
+
+.mainroadmapBox::-webkit-scrollbar-track {
+  background: #888;
+}
+
+.mainroadmapBox::-webkit-scrollbar-thumb {
+  background: #d7efe6;
+}
+
+.mainroadmapBox::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.overlay h1 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.overlay h4 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+  padding: 0 20px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.overlay p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #fff;
+  padding: 0 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 19px;
+}
+
+.overlay figure {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.overlay figure img {
+  width: 100%;
+  display: block;
+}
+
+.teamtext-main {
+  margin-top: 25px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #006dfd;
+            box-shadow: 0 0 0 0 #006dfd;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+            box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+            box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #006dfd;
+            box-shadow: 0 0 0 0 #006dfd;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+            box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+            box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.headerNav {
+  background-color: #242424 !important;
+  backdrop-filter: blur(44px);
+  -webkit-backdrop-filter: blur(44px);
+}
+
+.artwork .slick-slide {
+  text-align: center;
+}
+
+.slick-prev {
+  left: -6px !important;
+}
+
+.slick-next {
+  right: -6px;
+}
+
+.commingsoon {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 160px;
+}
+
+.commingsoon h4 {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  text-shadow: 0px 0px 7px #4a4a4a;
+  color: #ffffff !important;
+  font-size: 45px !important;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 12px;
+  margin: 0;
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .commingsoon h4 {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    text-shadow: 0px 0px 7px #4a4a4a;
+    color: #ffffff !important;
+    font-size: 25px !important;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 300;
+    padding: 12px;
+    -webkit-animation: blinker 1s linear infinite;
+            animation: blinker 1s linear infinite;
+  }
+}
+
+.circleBox::after {
+  top: 0;
+  position: absolute;
+  content: "";
+  left: 50%;
+  margin: -11px 0 0 -10px;
+  width: 21px;
+  height: 21px;
+  background-color: #fafafa;
+  border-radius: 50%;
+}
+
+@font-face {
+  font-family: 'Xirod';
+  src: url("./font/Xirod-Regular.eot");
+  src: url("./font/Xirod-Regular.eot?#iefix") format("embedded-opentype"), url("./font/Xirod-Regular.woff2") format("woff2"), url("./font/Xirod-Regular.woff") format("woff"), url("./font/Xirod-Regular.ttf") format("truetype"), url("./font/Xirod-Regular.svg#Xirod-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'URW Geometric';
+  src: url("./font/URWGeometric-ExtraBold.eot");
+  src: url("./font/URWGeometric-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./font/URWGeometric-ExtraBold.woff2") format("woff2"), url("./font/URWGeometric-ExtraBold.woff") format("woff"), url("./font/URWGeometric-ExtraBold.ttf") format("truetype"), url("./font/URWGeometric-ExtraBold.svg#URWGeometric-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/*# sourceMappingURL=main.css.map */

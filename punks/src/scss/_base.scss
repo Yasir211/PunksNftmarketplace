@@ -1,0 +1,452 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0 !important;
+  background: #212121 !important;
+  color: #fafafa;
+  font-family: "URW Geometric";
+}
+@supports (-webkit-touch-callout: none) {
+  .cssSafari {
+    background-attachment: initial !important;
+  }
+}
+.newcssforLine{
+  position: relative;
+  &::before{
+    right: 242px !important;
+    width: 200px;
+    border: 1px solid #fff;
+    top: 0px;
+    height: 0px;
+    content: '';
+    z-index: 22;
+    position: absolute;
+    @media (max-width:1280px){
+      right: 272px !important;}
+    @media (max-width:960px){
+      display:none;}
+  }
+}
+.roadmappage {
+  width: 100%;
+  position: relative;
+  padding-top: 50px;
+  background-size: cover;
+  background-color: #212121;
+  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+//  .memberBox {
+//   margin-top: 5px;
+//   padding: 20px;
+//   text-align: center;
+//   img {
+//     transition: all 0.4s;
+
+//     border-radius: 10px;
+//     &:hover {
+//       transform: scale(1.12);
+//       transition: all 0.4s;
+//     }
+//   }
+// }
+
+.mainBoxRoadmap {
+  text-align: left;
+  max-width: 984px;
+  margin: 82px auto 0;
+  h3 {
+    font-size: 30px;
+    color: #fff;
+    margin: 20px 0;
+    display: inline-block;
+    position: relative;
+    &::after {
+      top: -20px;
+      position: absolute;
+      content: "";
+      left: 50%;
+      margin: -11px 0 0 -10px;
+      width: 21px;
+      height: 21px;
+      background-color: #d7efe6;
+      border-radius: 50%;
+    }
+  }
+  p {
+    font-size: 18px;
+    color: #bebebe;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    li {
+      p {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+.roadmapMap-one {
+  border: 2px solid #fff;
+  border-left: 0;
+  border-radius: 0 200px 200px 0;
+  padding-bottom: 82px;
+  margin-top: -2px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    background: #202020;
+    height: 2px;
+    width: 12.5%;
+    bottom: -2px;
+    left: 0;
+  }
+}
+.roadmapMap-two {
+  border: 2px solid #fff;
+  border-right: 0;
+  border-radius: 200px 0 0 200px;
+  padding-bottom: 82px;
+  margin-top: -2px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background: #000;
+    height: 30px;
+    width: 148px;
+    top: 4px;
+    right: -10px;
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    pointer-events: none;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    background: #000000;
+    height: 30px;
+    width: 148px;
+    bottom: 4px;
+    right: -10px;
+    transform: rotate(8deg);
+    transform-origin: top left;
+    pointer-events: none;
+  }
+}
+.roadmapMap-three {
+  &::before {
+    position: absolute;
+    content: "";
+    background: #000;
+    height: 2px;
+    width: 8.3%;
+    top: -2px;
+    left: 0;
+  }
+}
+.last {
+  &::after {
+    display: none;
+  }
+}
+.overlay {
+  figure {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 50px 0 50px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .roadmapMap-one2 {
+    border-left: 2px solid #fff;
+    text-align: left;
+    padding-left: 30px;
+  }
+  .roadmapMap-one {
+    border: none;
+    border-left: 2px solid #fff;
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  .mainBoxRoadmap p {
+    max-width: 100%;
+  }
+  .roadmapMap-two {
+    border: none;
+    border-left: 2px solid #fff;
+    text-align: left;
+    padding-left: 30px;
+    border-radius: 0;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  .mainBoxRoadmap ul {
+    display: block;
+    li {
+      padding-bottom: 30px;
+      p {
+        padding: 0;
+      }
+    }
+  }
+  .mainBoxRoadmap h3::after {
+    top: 18px;
+    left: -31px;
+  }
+}
+
+// .slick-dots {
+//   text-align: center;
+//   bottom: -45px;
+// }
+// .slick-dots li {
+//   margin: 0;
+//   width: 15px;
+//   padding: 4px;
+// }
+// .slick-dots li button:before {
+//   color: #176386;
+//   font-size: 18px;
+// }
+.artwork {
+  .slick-initialized .slick-slide.slick-current {
+    .active {
+      transform: scale(1.15);
+      transition: all 0.4s ease-in;
+    }
+  }
+  .slick-track {
+    padding: 60px 0;
+  }
+}
+
+// .slick-dots li.slick-active button:before {
+//   color: #ffffff !important;
+//   font-size: 18px;
+// }
+.slick-dots li button:before {
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 3px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  background-color: #fff;
+  color: #0000;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #0000;
+}
+.clr-gry.slick-arrow {
+  top: 0;
+  position: absolute;
+}
+
+.mainroadmapBox {
+  overflow-x: scroll;
+  display: -webkit-inline-box;
+  width: 100%;
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #888;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #d7efe6;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.overlay {
+  position: relative;
+
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #ffffff;
+    padding: 0 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    color: #fff;
+    padding: 0 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 19px;
+  }
+  figure {
+    // border-radius: 50%;
+    max-width: 350px;
+    margin: 0 auto;
+    // background-color: #bebeca;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.teamtext-main {
+  margin-top: 25px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #006dfd;
+    box-shadow: 0 0 0 0 #006dfd;
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+}
+.headerNav {
+  background-color: rgba(36, 36, 36, 1) !important;
+  backdrop-filter: blur(44px);
+  -webkit-backdrop-filter: blur(44px);
+}
+.artwork {
+  .slick-slide {
+    text-align: center;
+  }
+}
+.slick-prev {
+  left: -6px !important;
+}
+.slick-next {
+  right: -6px;
+}
+
+.commingsoon {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 160px;
+  h4 {
+    filter: blur(1px);
+    text-shadow: 0px 0px 7px #4a4a4a;
+    color: #ffffff !important;
+    font-size: 45px !important;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 300;
+    padding: 12px;
+    margin: 0;
+    animation: blinker 1s linear infinite;
+  }
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+@media (max-width: 768px) {
+  .commingsoon {
+    h4 {
+      filter: blur(1px);
+      text-shadow: 0px 0px 7px #4a4a4a;
+      color: #ffffff !important;
+      font-size: 25px !important;
+      text-transform: uppercase;
+      border-radius: 5px;
+      font-weight: 300;
+      padding: 12px;
+      animation: blinker 1s linear infinite;
+    }
+  }
+}
+// div#section2 {
+//   padding-top: 70px;
+// }
+// div#section3 {
+//   padding-top: 20px;
+// }
+.circleBox {
+  &::after {
+    top: 0;
+    position: absolute;
+    content: "";
+    left: 50%;
+    margin: -11px 0 0 -10px;
+    width: 21px;
+    height: 21px;
+    background-color: #fafafa;
+    border-radius: 50%;
+  }
+}
