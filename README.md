@@ -33,4 +33,4 @@ Refer to https://nodejs.org/en/ to install nodejs
 
     Add your backend code API URL
 
-# Algorand Network Nft
+# Algorand Nft Network
